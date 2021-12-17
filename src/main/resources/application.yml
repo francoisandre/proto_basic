@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: protobasic
+server:
+  port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
+    lease-renewal-interval-in-seconds: 3
+    lease-expiration-duration-in-seconds: 5
